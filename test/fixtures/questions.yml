@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question: MyString
+  mediaUrl: MyString
+  mediaType: MyString
+  answer1: MyString
+  answer2: MyString
+  answer3: MyString
+  rightanswer: 1
+
+two:
+  question: MyString
+  mediaUrl: MyString
+  mediaType: MyString
+  answer1: MyString
+  answer2: MyString
+  answer3: MyString
+  rightanswer: 1
