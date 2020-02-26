@@ -12,7 +12,7 @@ module Api
         if category.save
           render json: {status: 'OK', data: {id:category.id}}, status: :ok
         else
-          render json: {status: 'ERROR', data: category.error}, status: :unprocessable_entity
+          render json: {status: 'ERROR', data: category.errors}, status: :unprocessable_entity
         end
       end
 

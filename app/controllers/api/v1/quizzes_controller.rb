@@ -9,9 +9,9 @@ module Api
         quiz = Quiz.new(quiz_params)
 
         if quiz.save
-          render json: {status: 'OK', data: {id: quiz.quiz_id}}, status: :ok
+          render json: {status: 'OK', data: {id: quiz.id}}, status: :ok
         else
-          render json: {status: 'ERROR', data: article.error}, status: :unprocessable_entity
+          render json: {status: 'ERROR', data: quiz.errors}, status: :unprocessable_entity
         end
       end
 
